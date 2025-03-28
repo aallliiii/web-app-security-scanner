@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify File Integrity</title>
+</head>
+<body>
+    <h2>Verify File Integrity</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="file">Upload a file to verify:</label>
+        <input type="file" name="file" required>
+        <button type="submit">Verify</button>
+    </form>
+</body>
+</html>

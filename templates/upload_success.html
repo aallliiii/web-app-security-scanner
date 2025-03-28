@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Successful</title>
+</head>
+<body>
+    <h2>File Uploaded Successfully!</h2>
+    <p>File Hash: {{ file.sha256_hash }}</p>
+    <a href="{% url 'upload_file' %}">Upload another file</a>
+    <a href="{% url 'verify_file' %}">Verify a file</a>
+</body>
+</html>
